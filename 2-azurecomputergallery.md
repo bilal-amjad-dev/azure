@@ -1,8 +1,10 @@
 23-December-2025
 
-To make this simpler for your notes or your article, we can strip away the complex variable logic and focus on the **structure**.
 
-In Azure, a **Compute Gallery** is just a "Folder" and the **Image Definition** is the "Template" inside it.
+In Azure, 
+
+- a **Compute Gallery** is just a "Folder"
+- and the **Image Definition** is the "Template" inside it.
 
 ### 📝 Simplified Notes: Azure Compute Gallery
 
@@ -38,9 +40,9 @@ resource "azurerm_shared_image" "win11_avd" {
 
 ### 💡 Key Concepts for Beginners
 
-* **Gallery vs. Image:** The `gallery` is the container. The `shared_image` is the definition (metadata) of the VM you want to build.
-* **Hyper-V Generation:** Always use **V2** for modern Azure VMs (like Windows 11).
-* **Packer Note:** You don't need a `shared_image_version` block in Terraform if you use **Packer**. Packer will build the actual disk and "plug it into" this definition automatically.
+- **Gallery vs. Image:** The `gallery` is the container. The `shared_image` is the definition (metadata) of the VM you want to build.
+- **Hyper-V Generation:** Always use **V2** for modern Azure VMs (like Windows 11).
+- **Packer Note:** You don't need a `shared_image_version` block in Terraform if you use **Packer**. Packer will build the actual disk and "plug it into" this definition automatically.
 
 ---
 
